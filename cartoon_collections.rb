@@ -19,5 +19,8 @@ def find_the_cheese(cheddar_cheese)
   
   cheese_types = ["cheddar", "gouda", "camembert"]
   
+  # use .find to return the 1st element that matches, .include within it to
+  # determine if the array it's iterating (enumerating?) over includes cheese.
+  
   cheddar_cheese.find {|i| cheese_types.include?(i)}
 end
